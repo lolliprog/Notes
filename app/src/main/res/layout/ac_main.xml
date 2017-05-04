@@ -15,15 +15,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
+        android:background="#FFF0F5"
+        android:padding="@dimen/margin_element"
         android:textSize="@dimen/textSize"
-        android:layout_margin="10dp"/>
+        android:layout_margin="@dimen/margin_element"/>
 
     <TextView
         android:id="@+id/tvNoNotes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/margin_element"
         android:text="@string/add_the_new_one"
+        android:background="#F8F8FF"
+        android:padding="@dimen/margin_element"
         android:textSize="@dimen/textSize"/>
 
     <Button
@@ -31,8 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_margin="8dp"
-        android:layout_marginBottom="-14dp"
+
+        android:layout_marginTop="-24dp"
         android:text="@string/plus" />
 
     <Button
@@ -40,5 +44,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick" />
+
+
+    <TextView
+        android:id="@+id/tvNewAddedNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_element"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/margin_element"
+
+        />
 
 </LinearLayout>

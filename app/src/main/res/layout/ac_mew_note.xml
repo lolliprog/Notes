@@ -5,9 +5,19 @@
               android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/etEnterNote"
+        android:id="@+id/etNewNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_your_note"/>
+
+    <Button
+        android:id="@+id/bSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="-14dp"
+        android:text="@string/save"
+        android:onClick="onClick"/>
 
 </LinearLayout>

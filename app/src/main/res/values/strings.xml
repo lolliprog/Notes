@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Notes</string>
-    <string name="welcome">Welcome to your notepad</string>
+    <string name="welcome">Welcome to your notepad!</string>
     <string name="add_the_new_one">You don`t have any notes. Add the new one</string>
     <string name="plus">+</string>
     <string name="enter_your_note">Enter your note</string>
+    <string name="save">save</string>
 </resources>
