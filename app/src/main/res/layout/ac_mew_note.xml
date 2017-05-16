@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+<LinearLayout
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
@@ -8,7 +12,10 @@
         android:id="@+id/etNewNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_your_note"/>
+        android:hint="@string/enter_your_note"
+        android:layout_margin="@dimen/margin_element"
+        android:background="@color/lavenderBlush"
+        android:padding="@dimen/margin_element"/>
 
     <Button
         android:id="@+id/bSave"
@@ -21,3 +28,4 @@
         android:onClick="onClick"/>
 
 </LinearLayout>
+</ScrollView>

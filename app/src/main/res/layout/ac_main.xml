@@ -1,59 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:divider="@drawable/separator"
-    android:dividerPadding="300dp"
-    android:showDividers="middle"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    android:orientation="vertical">
-
-
-    <TextView
-        android:id="@+id/tvEnterNote"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:background="#FFF0F5"
-        android:padding="@dimen/margin_element"
-        android:textSize="@dimen/textSize"
-        android:layout_margin="@dimen/margin_element"/>
+        android:layout_height="match_parent"
+        android:divider="@drawable/separator"
+        android:dividerPadding="300dp"
+        android:orientation="vertical"
+        android:showDividers="middle">
 
-    <TextView
-        android:id="@+id/tvNoNotes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_element"
-        android:text="@string/add_the_new_one"
-        android:background="#F8F8FF"
-        android:padding="@dimen/margin_element"
-        android:textSize="@dimen/textSize"/>
+        <TextView
+            android:id="@+id/tvEnterNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_element"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:padding="@dimen/margin_element"
+            android:text="@string/welcome"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/bAddNewNote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
+        <TextView
+            android:id="@+id/tvNoNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_element"
+            android:background="@color/lavenderBlush"
+            android:padding="@dimen/margin_element"
+            android:text="@string/add_the_new_one"
+            android:textSize="@dimen/textSize"/>
 
-        android:layout_marginTop="-24dp"
-        android:text="@string/plus" />
+        <Button
+            android:id="@+id/bAddNewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-24dp"
+            android:text="@string/plus"/>
 
-    <Button
-        android:id="@+id/bAnimation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClick" />
+        <Button
+            android:id="@+id/bAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_animation"
+            android:onClick="onAnimationClick"
+            android:text="@string/push_and_activity_will_appear_from_the_corner"
+            android:textColor="@color/ghostWhite"/>
 
+        <Button
+            android:id="@+id/bDellAllNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/margin_element"
+            android:onClick="onDelAllClick"
+            android:text="@string/delete_all_notes"/>
 
-    <TextView
-        android:id="@+id/tvNewAddedNote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_element"
-        android:background="@color/colorAccent"
-        android:padding="@dimen/margin_element"
+        <TextView
+            android:id="@+id/tvNewAddedNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_element"
+            android:background="@color/lavenderBlush"
+            android:padding="@dimen/margin_element"/>
 
-        />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
